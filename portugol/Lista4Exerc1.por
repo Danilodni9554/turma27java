@@ -9,8 +9,8 @@ programa
 	funcao inicio()
 	{
 
-		cadeia materia [6]
-		inteiro pontuacaoV [6]
+		cadeia materia [5]
+		inteiro pontuacaoV [5]
 		inteiro maiorPontuacao=0
 		inteiro pontuacao=0
 
@@ -20,11 +20,10 @@ programa
 			escreva("\nDigite aqui a matéria: ")
 			leia(materia [i])
 			escreva("\nDigite aqui a pontuação: ")
-			leia(pontuacao)
-			escreva("Repita a pontuação: ")
 			leia(pontuacaoV [i])
-			se(pontuacao > maiorPontuacao){
-				maiorPontuacao=pontuacao
+			
+			se(pontuacaoV[i] > maiorPontuacao){
+				maiorPontuacao=pontuacaoV[i]
 			}
 			
 			
@@ -46,7 +45,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 833; 
+ * @POSICAO-CURSOR = 586; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

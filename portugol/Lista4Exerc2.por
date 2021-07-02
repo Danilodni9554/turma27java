@@ -11,42 +11,42 @@ programa
 	funcao inicio()
 	{
 
-		inteiro lancamentoV[10]
-		inteiro numV[10]
-		inteiro lancamento=0
-		inteiro num=0
-		inteiro maiorNum
+		inteiro lancamentoV[3], numV[3], maiorNum=0, repeteMaior=0,contador=0, contador2=0
+		real mediaTotal,totDado=0.0		
 
-          para( inteiro i=0;i <=10; i++)
-          {
-      	
-            escreva("Lançamento  : ")
-		  leia(lancamentoV[i])
-            escreva("O número : ")
-            leia(numV[i])
-            totalLancamento
-
-		se (numV[i] > maiorNum){
-				maiorNum = numV[i]
-            
-	   	 }
-		limpa()
-      	para( inteiro i=0;i <=3; i++){
-
-        	
-          escreva("No lançamento ",lancamentoV[i]," o número foi:",numV[i],"\n")
+          para( inteiro i=0;i <3; i++){
+          	
+      	escreva("Lançamento  : ")
+		leia(lancamentoV[i])
+          escreva("O número : ")
+          leia(numV[i])
+          totDado += numV[i]
+          contador++
+          se(numV[i]>=maiorNum ou numV[i]==maiorNum){
+          	maiorNum+=numV[i]
+          	contador2++
+          	
+          	
+          }
           
+          }
+          limpa()
+      	para(inteiro i=0;i <3; i++){
+      	escreva("No lançamento ",lancamentoV[i]," o número foi:",numV[i],"\n")
       	}
-      	
+      	mediaTotal= totDado / contador
+      	escreva("\nA média dos numeros é: ",mediaTotal)
+      	escreva("\nOcorrências de maior pontuação: ",contador2-1)
       }
 }
+
 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 651; 
+ * @POSICAO-CURSOR = 710; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
