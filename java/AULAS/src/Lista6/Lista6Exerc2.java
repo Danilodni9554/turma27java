@@ -18,7 +18,7 @@ public class Lista6Exerc2 {
 		System.out.println("Escreva o terceiro número");
 		numC = x.nextInt();
 		
-		if(numA < numB && numA < numB && numB < numC ) {
+		if(numA < numB && numB < numC ) {
 			System.out.printf("A ordem sera %d , %d, %d",numA,numB,numC);
 		}
 		else if(numB < numA && numB < numC && numA < numC) {

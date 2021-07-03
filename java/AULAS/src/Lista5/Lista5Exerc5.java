@@ -17,7 +17,7 @@ public class Lista5Exerc5 {
 		System.out.println("Digite a nota referente a disciplina C: ");
 		c = leia.nextDouble();
 
-		media=((a*2)+(b*3)+(c*5)/3);
+		media=(((a*2)+(b*3)+(c*5)))/3;
 
 		System.out.println("A média do aluno é: "+media);
 		
