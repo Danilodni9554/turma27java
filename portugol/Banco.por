@@ -23,7 +23,7 @@ programa
 			//limpa()
 
 				
-				real saldo=30.00, saldo1=0.0, valorD=0.00, valorC=0.00, limite=100.00
+				real saldo=0.00, saldo1=0.0, valorD=0.00, valorC=0.00, limite=1000.00
 				cadeia sair, movimento
 				inteiro contador=0
 				faca{
@@ -38,11 +38,12 @@ programa
 
 				
 			
-					se(movimento == "C" ou movimento == "c"){
-					escreva("Valor : ")
+					se(movimento == "D" ou movimento == "d"){
+					escreva("\nValor : ")
 					leia(valorD)
 					saldo = saldo - valorD
-					escreva(saldo)
+					saldo = saldo1
+					//escreva(saldo)
 					}
 
 					se(saldo<0){
@@ -57,7 +58,7 @@ programa
 					saldo = saldo1
 					}					
 												
-					escreva("\nDeseja continuar ?")
+					escreva("\nDeseja continuar ? ")
 					leia(sair)
 							
 			
@@ -81,7 +82,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1312; 
+ * @POSICAO-CURSOR = 607; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
