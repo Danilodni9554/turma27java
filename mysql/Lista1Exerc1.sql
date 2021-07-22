@@ -1,2 +1,2 @@
-select * from tb_funcionarios
+select * from tb_funcionarios where salario > 2000.00
     
