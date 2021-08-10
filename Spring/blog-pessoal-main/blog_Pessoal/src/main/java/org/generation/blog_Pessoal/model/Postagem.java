@@ -22,7 +22,7 @@ public class Postagem {
 	private long id;
 	
 	@NotNull
-	@Size
+	@Size(min = 2, max = 50)
 	private String titulo;
 	
 	@NotNull
