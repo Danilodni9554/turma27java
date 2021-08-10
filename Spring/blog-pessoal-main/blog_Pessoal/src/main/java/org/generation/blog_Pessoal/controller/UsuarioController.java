@@ -3,6 +3,10 @@ package org.generation.blog_Pessoal.controller;
 import java.util.List;
 import java.util.Optional;
 
+import org.generation.blog_Pessoal.model.Usuario;
+import org.generation.blog_Pessoal.model.UsuarioLogin;
+import org.generation.blog_Pessoal.repository.UsuarioRepository;
+import org.generation.blog_Pessoal.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.org.generation.blogpessoal.model.Usuario;
-import br.org.generation.blogpessoal.model.UsuarioLogin;
-import br.org.generation.blogpessoal.repository.UsuarioRepository;
-import br.org.generation.blogpessoal.service.UsuarioService;
+
 
 @RestController
 @RequestMapping("/usuarios")
